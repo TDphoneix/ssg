@@ -1,2 +1,8 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+    let {data} = $props()
+</script>
+
+<div class="flex justify-center mt-8">
+    <h1 class="text-orange-500 text-2xl">hello world</h1>
+    <p>my name is {data.name}</p>
+</div>
